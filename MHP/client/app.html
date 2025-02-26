@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Price Prediction</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="header">
+            <h1>House Price Prediction</h1>
+            <p class="subheading">Get an estimated price for your dream house based on location, size, and more!</p>
+            <p class="company-name">Real Estate Experts</p>
+        </div>
+
+        <div class="form-container">
+            <form id="predictionForm">
+                <label for="region">Region Name:</label>
+                <select id="region" name="region" required>
+                    <option value="">Select Region</option>
+                    <option value="Downtown">Downtown</option>
+                    <option value="Suburbs">Suburbs</option>
+                    <option value="Rural">Rural</option>
+                </select>
+
+                <label for="distance">Distance from City (km):</label>
+                <input type="number" id="distance" name="distance" required>
+
+                <label for="area">Area (sqft):</label>
+                <input type="number" id="area" name="area" required>
+
+                <label for="rooms">Number of Rooms:</label>
+                <input type="number" id="rooms" name="rooms" required>
+
+                <label for="bathrooms">Number of Bathrooms:</label>
+                <input type="number" id="bathrooms" name="bathrooms" required>
+
+                <button type="submit">Predict Price</button>
+            </form>
+            
+            <div id="result"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
