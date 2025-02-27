@@ -19,10 +19,10 @@ def predict_home_price():
     print("hrer we go")
     try:
         total_sqft = float(request.form.get('total_sqft'))
-        region = int(request.form.get('region'))
+        region = request.form.get('region')
         distance = float(request.form.get('distance'))
-        rooms = int(request.form.get('rooms'))
-        bathrooms = int(request.form.get('bathrooms'))
+        rooms = request.form.get('rooms')
+        bathrooms = request.form.get('bathrooms')
         estimated_price = util.get_estimated_price(region, total_sqft, rooms, bathrooms, distance)
         return jsonify({'estimated_price': estimated_price}), 200
     except (TypeError, ValueError, KeyError) as e:
