@@ -43,5 +43,5 @@ The application uses a **Flask server** to handle the API calls and run the pred
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/melbourne-housing-price-prediction.git
+git clone https://github.com/talhaakbarmohal/housing-price-pridictor.git
 cd melbourne-housing-price-prediction
